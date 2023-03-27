@@ -20,7 +20,7 @@ public class JsonParse {
 
         String[] items = matcher.group(1).split("\\},\\{");
 
-        List<Map<String, String>> dados = new ArrayList<>();
+        List<Map<String, String>> data = new ArrayList<>();
 
         for (String item : items) {
 
@@ -33,10 +33,10 @@ public class JsonParse {
                 atributosItem.put(atributo, valor);
             }
 
-            dados.add(atributosItem);
+            data.add(atributosItem);
         }
 
-        return dados;
+        return data;
 
     }
 }
